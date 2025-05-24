@@ -1,0 +1,67 @@
+/* src/pages/Reading.css */
+
+/* 전체 리딩 화면 레이아웃 */
+.reading-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+    text-align: center;
+}
+
+.reading-container h1 {
+    font-size: 2em;
+    margin-bottom: 16px;
+}
+
+/* 카드 리스트 배열 */
+.reading-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.reading-card {
+    width: 200px;
+}
+
+/* 개별 카드 애니메이션 컨테이너 */
+.reading-card-inner {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 12px;
+    perspective: 800px; /* 3D 회전 시 원근감 */
+}
+
+/* 카드 이미지 스타일 */
+.reading-card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    backface-visibility: hidden; /* 3D 회전 시 뒷면 숨김 */
+    transition: transform 0.6s;
+}
+
+/* 역방향 카드 이미지: 180도 회전 */
+.reading-card-image.reversed {
+    transform: rotateZ(180deg);
+}
+
+/* 카드 텍스트 정보 영역 */
+.reading-card-text {
+    margin-top: 12px;
+    text-align: left;
+}
+
+.reading-card-text h2 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.reading-card-text p {
+    font-size: 0.9em;
+    margin: 4px 0;
+    color: #555;
+}

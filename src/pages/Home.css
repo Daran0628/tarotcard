@@ -1,0 +1,104 @@
+/* src/pages/Home.css */
+
+/* 카드 덱 전체를 감싸는 컨테이너 */
+.deck-container {
+    position: relative;
+    width: 95vw;
+    height: 70vh;
+    min-height: 600px;
+    max-height: 1000px;
+    overflow: visible;
+    /*background-color: #f4f4f4;*/
+}
+
+/* 카드 그리드 (일반 모드에서는 grid 유지) */
+.image-grid {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex; /* <- 애니메이션 중에는 grid 대신 flex */
+    /*align-items: flex-end;*/
+    padding: 16px;
+    flex-wrap: nowrap; /* 줄바꿈 허용 */
+}
+
+/* 카드 래퍼 - 3D 공간 제공 */
+.card-wrapper {
+    position: absolute;
+    top: 8%;
+    width: 120px;
+    height: 205px;
+    perspective: 1000px;
+    /*background-color: #ccc;*/
+    flex-shrink: 0;
+}
+
+/* 카드 내부 컨테이너 - 중앙 축 회전 */
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50%; /* 카드 중앙 기준 회전 */
+}
+
+/* 카드 앞/뒷면 공통 스타일 */
+.card-face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* 카드 앞면 - 기본 상태 */
+.card-front {
+    transform: rotateY(180deg);
+}
+
+/* 카드 뒷면 - 뒤집힌 상태 */
+.card-back {
+    background: url("../assets/img/back.jpg") center /170% 170%  no-repeat;
+    transform: rotateY(0deg);
+    border: 1px solid #aaa;
+    overflow: hidden;
+}
+
+/* reversed 상태 - 카드 앞면을 위아래로 뒤집어 표시 */
+.card-front.reversed {
+    transform: rotateY(180deg) rotateZ(180deg);
+}
+
+/* 카드 앞면 - 기본 상태 */
+.card-front {
+    transform: rotateY(180deg);
+}
+
+/* 카드 뒷면 - 뒤집힌 상태 */
+.card-back {
+    transform: rotateY(0deg);
+}
+
+/* reversed 상태 - 카드 앞면을 위아래로 뒤집어 표시 */
+.card-front.reversed {
+    transform: rotateY(180deg) rotateZ(180deg);
+}
+
+/* 결과 보기 버튼 */
+.result-button {
+    position: relative;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    font-size: 16px;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+}
