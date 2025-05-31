@@ -19,9 +19,9 @@ src/
 │   ├── imageName.js
 │   └── tarotCard.js
 └── pages/
-    ├── CategorySelect.jsx
-    ├── Home.css
-    ├── Home.jsx
-    ├── Reading.css
-    └── Reading.jsx
+    ├── Index.jsx
+    ├── Index.css
+    ├── Index.jsx
+    ├── Index.css
+    └── index.jsx
 ```

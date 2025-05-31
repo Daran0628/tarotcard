@@ -1,0 +1,131 @@
+C:.
+|   index.css
+|   main.jsx
+|   structure.md
+|   structureFSD.txt
+|   
++---app
+|       App.jsx
+|       
++---assets
+|   \---img
+|           0_M_TheFool.png
+|           10_M_WheelOfFortune.png
+|           11_M_Justice.png
+|           12_M_TheHangedMan.png
+|           13_M_Death.png
+|           14_M_Temperance.png
+|           15_M_TheDevil.png
+|           16_M_TheTower.png
+|           17_M_TheStar.png
+|           18_M_TheMoon.png
+|           19_M_TheSun.png
+|           1_M_TheMagician.png
+|           20_M_Judgment.png
+|           21_M_TheWorld.png
+|           22_mW_1_AceOfWands.png
+|           23_mW_2_TwoOfWands.png
+|           24_mW_3_ThreeOfWands.png
+|           25_mW_4_FourOfWands.png
+|           26_mW_5_FiveOfWands.png
+|           27_mW_6_SixOfWands.png
+|           28_mW_7_SevenOfWands.png
+|           29_mW_8_EightOfWands.png
+|           2_M_TheHighPriestess.png
+|           30_mW_9_NineOfWands.png
+|           31_mW_10_TenOfWands.png
+|           32_mW_11_PageOfWands.png
+|           33_mW_12_KnightOfWands.png
+|           34_mW_13_QueenOfWands.png
+|           35_mW_14_KingOfWands.png
+|           36_mC_1_AceOfCups.png
+|           37_mC_2_TwoOfCups.png
+|           38_mC_3_ThreeOfCups.png
+|           39_mC_4_FourOfCups.png
+|           3_M_TheEmpress.png
+|           40_mC_5_FiveOfCups.png
+|           41_mC_6_SixOfCups.png
+|           42_mC_7_SevenOfCups.png
+|           43_mC_8_EightOfCups.png
+|           44_mC_9_NineOfCups.png
+|           45_mC_10_TenOfCups.png
+|           46_mC_11_PageOfCups.png
+|           47_mC_12_KnightOfCups.png
+|           48_mC_13_QueenOfCups.png
+|           49_mC_14_KingOfCups.png
+|           4_M_TheEmperor.png
+|           50_mS_1_AceOfSwords.png
+|           51_mS_2_TwoOfSwords.png
+|           52_mS_3_ThreeOfSwords.png
+|           53_mS_4_FourOfSwords.png
+|           54_mS_5_FiveOfSwords.png
+|           55_mS_6_SixOfSwords.png
+|           56_mS_7_SevenOfSwords.png
+|           57_mS_8_EightOfSwords.png
+|           58_mS_9_NineOfSwords.png
+|           59_mS_10_TenOfSwords.png
+|           5_M_TheHierophant.png
+|           60_mS_11_PageOfSwords.png
+|           61_mS_12_KnightOfSwords.png
+|           62_mS_13_QueenOfSwords.png
+|           63_mS_14_KingOfSwords.png
+|           64_mP_1_AceOfPentacles.png
+|           65_mP_2_TwoOfPentacles.png
+|           66_mP_3_ThreeOfPentacles.png
+|           67_mP_4_FourOfPentacles.png
+|           68_mP_5_FiveOfPentacles.png
+|           69_mP_6_SixOfPentacles.png
+|           6_M_TheLovers.png
+|           70_mP_7_SevenOfPentacles.png
+|           71_mP_8_EightOfPentacles.png
+|           72_mP_9_NineOfPentacles.png
+|           73_mP_10_TenOfPentacles.png
+|           74_mP_11_PageOfPentacles.png
+|           75_mP_12_KnightOfPentacles.png
+|           76_mP_13_QueenOfPentacles.png
+|           77_mP_14_KingOfPentacles.png
+|           7_M_TheChariot.png
+|           8_M_Strength.png
+|           9_M_TheHermit.png
+|           back.jpg
+|           
++---data
+|       tarotCard.js
+|       
++---features
+|   +---fortune
+|   |   +---config
+|   |   |       rules.js
+|   |   |       
+|   |   \---lib
+|   |           cardUtils.jsx
+|   |           
+|   +---model
+|   |       FortuneContext.jsx
+|   |       useFortune.js
+|   |       
+|   \---ui
+|           CardSelector.jsx
+|           CategorySelect.jsx
+|           ReadingResult.jsx
+|           
++---pages
+|   |   Home.css
+|   |   Reading.css
+|   |   
+|   +---CardSelect
+|   |       index.jsx
+|   |       
+|   +---ReadingPage
+|   |       index.jsx
+|   |       
+|   \---SelectPage
+|           index.jsx
+|           
+\---shared
+    +---data
+    |       imageName.js
+    |       
+    \---styles
+            App.css
+            
